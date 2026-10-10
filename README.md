@@ -5,10 +5,10 @@
 
 
 ----------------------------------------
-### x64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-novnc-hub/x64)
-### aarch64
-![Docker Image Size](https://img.shields.io/docker/image-size/forumi0721/alpine-novnc-hub/aarch64)
+### amd64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-novnc-hub/latest?arch=amd64)
+### arm64
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/forumi0721/alpine-novnc-hub/latest?arch=arm64)
 
 
 
@@ -16,8 +16,8 @@
 #### Description
 
 * Distribution : [Alpine Linux](https://alpinelinux.org/)
-* Architecture : x64,aarch64
-* Appplication : [noVNC Hub](https://github.com/forumi0721/novnc-hub)
+* Architecture : amd64, arm64
+* Application : [noVNC Hub](https://github.com/forumi0721/novnc-hub)
     - Web-based portal to manage and connect to multiple VNC servers via noVNC.
 
 
@@ -29,7 +29,7 @@
 docker run -d \
            -p 8080:8080/tcp \
            -v /conf.d:/conf.d \
-           forumi0721/alpine-novnc-hub:[ARCH_TAG]
+           forumi0721/alpine-novnc-hub:latest
 ```
 
 
